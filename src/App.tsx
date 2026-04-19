@@ -1,8 +1,8 @@
 import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
 import { AnimatePresence } from "framer-motion";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "sonner";
+import { TooltipProvider } from "@radix-ui/react-tooltip";
 import { ThemeProvider } from "@/hooks/use-theme";
 import BottomNav from "@/components/bottom-nav";
 import CelestialBackground from "@/components/celestial-background";
