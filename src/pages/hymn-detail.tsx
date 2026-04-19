@@ -126,10 +126,10 @@ export default function HymnDetail() {
 
   return (
     <PageTransition direction="forward">
-      <div className="min-h-[100dvh] w-full max-w-[480px] mx-auto bg-background flex flex-col transition-colors duration-300">
+      <div className="min-h-[100dvh] w-full max-w-[480px] mx-auto bg-background/30 backdrop-blur-[1px] flex flex-col transition-colors duration-300">
 
         {/* Sticky header */}
-        <header className="sticky top-0 z-20 bg-background/95 backdrop-blur-xl border-b border-border/50">
+        <header className="sticky top-0 z-20 bg-background/70 backdrop-blur-xl border-b border-border/40">
           <div className="flex items-center justify-between px-3 py-3">
             <Link
               href="/"

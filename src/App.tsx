@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/hooks/use-theme";
 import BottomNav from "@/components/bottom-nav";
+import CelestialBackground from "@/components/celestial-background";
 import Home from "@/pages/home";
 import HymnDetail from "@/pages/hymn-detail";
 import Favorites from "@/pages/favorites";
@@ -34,7 +35,8 @@ function AppLayout() {
   const isDetailPage = location.startsWith("/hymn/");
 
   return (
-    <div className="relative">
+    <div className="relative min-h-screen">
+      <CelestialBackground />
       <AnimatedRoutes />
       {!isDetailPage && <BottomNav />}
     </div>
